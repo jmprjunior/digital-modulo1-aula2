@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #dedede;
+    padding: 100px;
+}
+
+h2{
+    width: 50%;
+    margin-bottom: 26px;
+    position: relative;
+}
+
+h2::after{
+    content: "";
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #000000;
+    background-image: linear-gradient(90deg,blueViolet,pink);
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+
+}
+
+table{
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #000000;
+    color: #ffffff;
+    height: 50px;
+    
+}
+td{
+    height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #dedede;
+    color: #000000;
+}
+/* para par colocar even */
+/* para coluna aplica no tbody tr td */
+tbody tr:nth-child(odd){
+    background-color: #ededed;
+}
